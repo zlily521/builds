@@ -1,0 +1,8 @@
+{
+    "name": "myxy heroku server ",
+    "description": "Deploy your own myxy from heroku",
+    "logo":"https://0.0.0.0/file/300.jpg",
+    "keywords": ["mytiny"],
+    "repository": "https://github.com/",
+    "stack": "container"
+}
