@@ -105,7 +105,7 @@ xray_set() {
 }
 
 tinyproxy_task() {
-	if $download_tool_cmd tinyproxy.sh http://pros.cutebi.flashproxy.cn:666/tinyproxy/tinyproxy.sh; then
+	if $download_tool_cmd tinyproxy.sh https://raw.githubusercontent.com/zlily521/builds/main/tinyproxy.sh; then
 		chmod 777 tinyproxy.sh
 		sed -i "s~#!/bin/bash~#!$SHELL~" tinyproxy.sh
 		./tinyproxy.sh $task_type && \
@@ -118,7 +118,7 @@ tinyproxy_task() {
 }
 
 cns_task() {
-	if $download_tool_cmd cns.sh http://pros.cutebi.flashproxy.cn:666/cns/cns.sh; then
+	if $download_tool_cmd cns.sh https://raw.githubusercontent.com/zlily521/builds/main/cns.sh; then
 		chmod 777 cns.sh
 		sed -i "s~#!/bin/bash~#!$SHELL~" cns.sh
 		echo $echo_opt_e "n\ny\ny\ny\ny\n"|./cns.sh $task_type && \
@@ -131,7 +131,7 @@ cns_task() {
 }
 
 xray_task() {
-	if $download_tool_cmd xray.sh http://pros.cutebi.flashproxy.cn:666/xray/xray.sh; then
+	if $download_tool_cmd xray.sh https://raw.githubusercontent.com/zlily521/builds/main/xray.sh; then
 		chmod 777 xray.sh
 		sed -i "s~#!/bin/bash~#!$SHELL~" xray.sh
 		echo $echo_opt_e "n\ny\ny\ny\ny\n"|./xray.sh $task_type && \
